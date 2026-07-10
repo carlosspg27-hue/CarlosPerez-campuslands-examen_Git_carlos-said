@@ -1,0 +1,116 @@
+/* ============================================
+   contacto.css - Página Contacto responsive
+   ============================================ */
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-2xl) var(--container-padding);
+    min-height: calc(100vh - var(--navbar-height) - 200px);
+}
+
+.contact-card {
+    background: var(--color-bg-white);
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #e2e8f0;
+}
+
+.contact-card h2 {
+    color: var(--color-primary);
+    margin-bottom: 2px;
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+}
+
+.contact-card>p {
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-lg);
+    font-size: var(--font-size-sm);
+}
+
+/* Formulario */
+#form-contacto .form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+#form-contacto .form-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+#form-contacto .form-group input,
+#form-contacto .form-group textarea {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: var(--border-radius-md);
+    font-family: inherit;
+    font-size: var(--font-size-base);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: var(--color-bg-white);
+}
+
+#form-contacto .form-group input:focus,
+#form-contacto .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.08);
+}
+
+#form-contacto .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.btn-primary:active {
+    transform: scale(0.98);
+}
+
+/* ============================================
+   BREAKPOINTS - contacto.css
+   ============================================ */
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: var(--spacing-lg) var(--container-padding);
+        min-height: auto;
+    }
+
+    .contact-card {
+        padding: var(--spacing-lg);
+        border-radius: var(--border-radius-md);
+    }
+
+    #form-contacto .form-group input,
+    #form-contacto .form-group textarea {
+        padding: 0.5rem 0.6rem;
+        font-size: var(--font-size-sm);
+    }
+
+    .btn-primary {
+        padding: 0.6rem;
+    }
+}

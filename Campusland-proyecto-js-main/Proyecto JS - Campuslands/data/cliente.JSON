@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "titulo": "Rock al Parque",
+      "fecha": "14 de ago de 2026",
+      "hora": "18:00",
+      "precio": 85000,
+      "categoria": "Rock",
+      "ciudad": "Bogotá",
+      "imagen": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500"
+    },
+    {
+      "id": 2,
+      "titulo": "Festival Electrónico Neon",
+      "fecha": "04 de sept de 2026",
+      "hora": "20:00",
+      "precio": 150000,
+      "categoria": "Electrónica",
+      "ciudad": "Medellín",
+      "imagen": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=500"
+    },
+    {
+      "id": 3,
+      "titulo": "Noche de Salsa Brava",
+      "fecha": "21 de jul de 2026",
+      "hora": "21:00",
+      "precio": 65000,
+      "categoria": "Salsa",
+      "ciudad": "Barranquilla",
+      "imagen": "https://images.unsplash.com/photo-1504609773096-104ff2c73ba4?w=500"
+    }
+  ]

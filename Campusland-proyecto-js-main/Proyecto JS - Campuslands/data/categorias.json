@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nombre": "Rock",
+        "desc": "Eventos de música rock, bandas en vivo y festivales de rock."
+    },
+    {
+        "id": 2,
+        "nombre": "Electrónica",
+        "desc": "Música electrónica, DJs, festivales de música electrónica y raves."
+    },
+    {
+        "id": 3,
+        "nombre": "Salsa",
+        "desc": "Eventos de salsa, orquestas en vivo y bailes de salsa."
+    },
+    {
+        "id": 4,
+        "nombre": "Pop",
+        "desc": "Conciertos de pop, artistas internacionales y nacionales."
+    },
+    {
+        "id": 5,
+        "nombre": "Jazz",
+        "desc": "Festivales de jazz, conciertos íntimos y jam sessions."
+    },
+    {
+        "id": 6,
+        "nombre": "Reggae",
+        "desc": "Música reggae, bandas de reggae y festivales de cultura jamaicana."
+    },
+    {
+        "id": 7,
+        "nombre": "Folclor",
+        "desc": "Eventos de música folclórica colombiana y latinoamericana."
+    },
+    {
+        "id": 8,
+        "nombre": "Clásica",
+        "desc": "Conciertos de música clásica, sinfónicas y ópera."
+    }
+]

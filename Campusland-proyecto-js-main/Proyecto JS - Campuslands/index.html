@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conciertos Conectados - Vive la música en vivo</title>
+    <link rel="icon" href="resources/img/logo.jpeg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo-container">
+            <div class="logo-icon">
+                <img src="resources/img/logo.jpeg" alt="logo">
+            </div>
+            <div>
+                <span class="logo-title">Eventify Campus</span>
+                <p class="logo-subtitle">Tu gestor de eventos favorito</p>
+            </div>
+        </div>
+        <nav class="nav-links">
+            <a href="#">Eventos</a>
+            <a href="pages/nostros.html">Nosotros</a>
+            <a href="pages/contacto.html">Contacto</a>
+        </nav>
+        <nav class="nav-acions">
+            <button class="btn-carrito">Carrito</button>
+            <a href="pages/login.html">
+                <button class="btn-panel">ADMIN</button>
+            </a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">TEMPORADA 2026</span>
+            <h1>Vive tus <span class="highlight">eventos</span> favoritos</h1>
+            <p>Descubre los mejores eventos en Colombia. Compra tus entradas de forma rápida y segura.</p>
+            <div class="hero-buttons">
+                <a href="#container">
+                    <button class="btn-primary">Explorar eventos</button>
+                </a>
+                <a href="pages/nostros.html">
+                    <button class="btn-secondary">Conocer más</button>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div>
+                    <h3>+120</h3>
+                    <p>Eventos al año</p>
+                </div>
+                <div>
+                    <h3>4</h3>
+                    <p>Ciudades</p>
+                </div>
+                <div>
+                    <h3>+50k</h3>
+                    <p>Clientes felices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="container" id="container">
+        <h2>Próximos eventos</h2>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar evento por nombre...">
+            <select id="city-select">
+                <option value="todos">Todas las ciudades</option>
+            </select>
+            <select id="category-select">
+                <option value="todos">Todas las categorías</option>
+            </select>
+        </div>
+
+        <div class="events-grid" id="contenedor-eventos"></div>
+        <section class="features-container">
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <img src="resources/img/candado-removebg-preview.png" alt="Icono Seguridad" class="feature-image">
+                </div>
+                <h3 class="feature-title">Compra segura</h3>
+                <p class="feature-description">Transacciones protegidas y entradas 100% garantizadas.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <img src="resources/img/envio.png" alt="Icono Envío" class="feature-image">
+                </div>
+                <h3 class="feature-title">Entrega inmediata</h3>
+                <p class="feature-description">Recibe tus entradas digitales en tu correo electrónico al instante.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon-wrapper">
+                    <img src="resources/img/servicio_tecnico-removebg-preview.png" alt="Icono Soporte"
+                        class="feature-image">
+                </div>
+                <h3 class="feature-title">Soporte 24/7</h3>
+                <p class="feature-description">Nuestro equipo está listo para ayudarte en cualquier momento que lo
+                    necesites.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <h3>Eventify Campus</h3>
+        <p>© 2026 Enventify Campus. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/cliente.js"></script>
+    <script src="js/ciudades.js"></script>
+</body>
+
+</html>

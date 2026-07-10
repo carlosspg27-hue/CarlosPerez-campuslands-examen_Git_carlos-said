@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Eventify Campus</title>
+    <link rel="icon" href="../resources/img/logo.jpeg">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+    <div class="main-layout">
+
+        <div id="sidebar-container"></div>
+
+        <main class="content">
+            <h1>Bienvenido, Administrador</h1>
+            <p>Resumen de la plataforma Eventify Campus</p>
+
+            <div class="stats-grid">
+                <div class="card">
+                    <h3>Total Ventas</h3>
+                    <p id="stat-ventas">0</p>
+                </div>
+                <div class="card">
+                    <h3>Eventos Activos</h3>
+                    <p id="stat-eventos">0</p>
+                </div>
+                <div class="card">
+                    <h3>Categorías</h3>
+                    <p id="stat-categorias">0</p>
+                </div>
+                <div class="card">
+                    <h3>Ciudades</h3>
+                    <p id="stat-ciudades">0</p>
+                </div>
+                <div class="card">
+                    <h3>Ingresos Totales</h3>
+                    <p id="stat-ingresos">$0</p>
+                </div>
+            </div>
+
+            <section class="recent-sales" style="margin-top: 40px;">
+                <h2 style="color: #1e293b; margin-bottom: 20px;">Últimas Ventas</h2>
+                <div class="table-container" style="background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05);">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <thead>
+                            <tr>
+                                <th style="text-align: left; color: #64748b; padding: 12px; border-bottom: 2px solid #f1f5f9;">Fecha</th>
+                                <th style="text-align: left; color: #64748b; padding: 12px; border-bottom: 2px solid #f1f5f9;">Cliente</th>
+                                <th style="text-align: left; color: #64748b; padding: 12px; border-bottom: 2px solid #f1f5f9;">Ciudad</th>
+                                <th style="text-align: right; color: #64748b; padding: 12px; border-bottom: 2px solid #f1f5f9;">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ultimas-ventas-body">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+
+</html>

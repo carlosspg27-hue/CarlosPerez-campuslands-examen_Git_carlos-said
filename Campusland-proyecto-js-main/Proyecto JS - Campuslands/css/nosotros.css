@@ -1,0 +1,118 @@
+.about-container {
+    padding: var(--spacing-2xl) var(--container-padding);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content .badge {
+    background: var(--color-primary);
+    color: white;
+    padding: 0.2rem 0.75rem;
+    border-radius: var(--border-radius-pill);
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.about-content h2 {
+    color: var(--color-primary);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    margin: var(--spacing-sm) 0 var(--spacing-md);
+    line-height: 1.2;
+}
+
+.about-content h2 .highlight {
+    color: var(--color-secondary);
+}
+
+.about-content p {
+    color: var(--text-secondary);
+    font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+    line-height: 1.7;
+    margin-bottom: var(--spacing-md);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.metric-box {
+    background: #ffffff;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metric-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.metric-box h4 {
+    color: var(--color-primary);
+    margin-bottom: 4px;
+    font-size: var(--font-size-lg);
+}
+
+.metric-box p {
+    font-size: var(--font-size-sm);
+    margin: 0;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.about-image img {
+    width: 100%;
+    height: clamp(250px, 40vw, 420px);
+    object-fit: cover;
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+}
+
+
+@media (max-width: 768px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+        padding: var(--spacing-xl) var(--container-padding);
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .about-image img {
+        height: 200px;
+        border-radius: var(--border-radius-md);
+    }
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+
+    .metric-box {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .about-container {
+        gap: var(--spacing-xl);
+    }
+
+    .about-image img {
+        height: 300px;
+    }
+}

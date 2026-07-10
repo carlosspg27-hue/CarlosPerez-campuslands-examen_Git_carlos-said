@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Eventos - Eventify Campus</title>
+    <link rel="icon" href="../resources/img/logo.jpeg">
+    <link rel="stylesheet" href="../css/eventos.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="main-layout">
+        <div id="sidebar-container"></div>
+        <main class="dashboard-container">
+            <section class="content">
+                <header class="content-header">
+                    <h1>Gestión de Eventos</h1>
+                    <button id="btn-nuevo-evento" class="btn-primary">+ Agregar Evento</button>
+                </header>
+
+                <section class="table-container">
+                    <table id="tabla-eventos">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Categoría</th>
+                                <th>Ciudad</th>
+                                <th>Precio</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="body-eventos">
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <div id="eventos-modal" class="modal-overlay">
+        <div class="eventos-modal-content">
+            <h2 id="eventos-modal-titulo">Nuevo Evento</h2>
+            <form id="eventos-form">
+                <!-- Campo oculto para el ID (edición) -->
+                <input type="hidden" id="eventos-id">
+
+                <div class="form-group">
+                    <label for="eventos-nombre">Nombre del Evento</label>
+                    <input type="text" id="eventos-nombre" placeholder="Ej: Rock al Parque" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventos-categoria">Categoría</label>
+                    <select id="eventos-categoria" required>
+                        <option value="">Seleccione una categoría</option>
+
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventos-ciudad">Ciudad</label>
+                    <select id="eventos-ciudad" required>
+                        <option value="">Seleccione una ciudad</option>
+                    </select>
+                    <small style="color: #64748b; display: block; margin-top: 4px;">
+                        Las ciudades se gestionan en el módulo de Ciudades
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventos-precio">Precio</label>
+                    <input type="number" id="eventos-precio" placeholder="85000" required min="0">
+                </div>
+
+                <div class="form-group">
+                    <label for="eventos-fecha">Fecha</label>
+                    <input type="date" id="eventos-fecha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventos-hora">Hora</label>
+                    <input type="time" id="eventos-hora" value="20:00" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventos-img">URL de Imagen</label>
+                    <input type="url" id="eventos-img" placeholder="https://ejemplo.com/imagen.jpg" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventos-desc">Descripción</label>
+                    <textarea id="eventos-desc" rows="3" placeholder="Describe el evento..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-save">Guardar Evento</button>
+                <button type="button" id="eventos-btn-cancelar" class="btn-cancel">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/eventos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Categorías - Eventify Campus</title>
+    <link rel="icon" href="../resources/img/logo.jpeg">
+    <link rel="stylesheet" href="../css/categorias.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <div class="main-layout">
+        <!-- Sidebar -->
+        <div id="sidebar-container"></div>
+
+        <!-- Contenido Principal -->
+        <main class="dashboard-container">
+            <section class="content">
+                <header class="content-header">
+                    <h1>Gestión de Categorías</h1>
+                    <button id="btn-nueva-categoria" class="btn-primary">+ Agregar Categoría</button>
+                </header>
+
+                <!-- Tabla de Categorías -->
+                <section class="table-container">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+                        <h3 style="color: #1e293b;">Lista de Categorías</h3>
+                        <span id="contador-categorias" style="color: #64748b; font-size: 0.9rem;">0 registros</span>
+                    </div>
+                    <table id="tabla-categorias">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Descripción</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="body-categorias">
+                            <!-- Las categorías se cargan aquí con JavaScript -->
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <div id="modal-categoria" class="modal-categoria">
+        <div class="modal-content-categoria">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #e2e8f0; padding-bottom: 15px;">
+                <h2 id="modal-titulo" style="color: #1e3a8a; margin: 0;">Nueva Categoría</h2>
+                <button type="button" id="btn-cerrar-modal-categoria" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #94a3b8;">&times;</button>
+            </div>
+            <form id="form-categoria">
+                <input type="hidden" id="cat-id">
+                
+                <div class="form-group">
+                    <label for="cat-nombre">Nombre</label>
+                    <input type="text" id="cat-nombre" placeholder="Ej: Rock" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="cat-desc">Descripción</label>
+                    <textarea id="cat-desc" rows="3" placeholder="Describe la categoría..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn-save">Guardar Categoría</button>
+                <button type="button" id="btn-cancelar-categoria" class="btn-cancel">Cancelar</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/categorias.js"></script>
+
+</body>
+
+</html>

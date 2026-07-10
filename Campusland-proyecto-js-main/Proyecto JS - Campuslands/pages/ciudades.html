@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Ciudades - Eventify Campus</title>
+    <link rel="icon" href="../resources/img/logo.jpeg">
+    <link rel="stylesheet" href="../css/ciudades.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <div class="main-layout">  
+        <div id="sidebar-container"></div>
+
+        <main class="dashboard-container">
+            <section class="content">
+                <header class="content-header">
+                    <h1>Ciudades</h1>
+                    <button id="btn-nueva-ciudad" class="btn-primary">+ Agregar Ciudad</button>
+                </header>
+
+                <!-- Tabla de Ciudades -->
+                <section class="table-container">
+                    <table id="tabla-ciudades">
+                        <thead>
+                            <tr>
+                                <th>Codigo</th>
+                                <th>Nombre</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="body-ciudades">
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <div id="modal-ciudad" class="modal-overlay">
+        <div class="modal-content-ciudad">
+            <h2 id="modal-titulo-ciudad">Nueva Ciudad</h2>
+            <form id="form-ciudad">
+                <input type="hidden" id="ciudad-id">
+                
+                <div class="form-group">
+                    <label for="ciudad-codigo">Codigo</label>
+                    <input type="text" id="ciudad-codigo" placeholder="Ej: BOG" required>
+                    <small style="color: #64748b; display: block; margin-top: 4px;">Codigo unico de 3 caracteres</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ciudad-nombre">Nombre</label>
+                    <input type="text" id="ciudad-nombre" placeholder="Ej: Bogota" required>
+                </div>
+                
+                <button type="submit" class="btn-save">Guardar Ciudad</button>
+                <button type="button" id="ciudad-btn-cancelar" class="btn-cancel">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/ciudades.js"></script>
+
+</body>
+</html>
